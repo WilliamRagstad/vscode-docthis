@@ -495,7 +495,7 @@ export class Documenter implements vs.Disposable {
             if (isOptional) {
                 sb.append("]");
             }
-            
+
             sb.append(" ");
             sb.appendSnippetTabstop();
 
