@@ -1,19 +1,29 @@
 {
-  "name": "docthis",
-  "displayName": "Document This",
-  "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files.",
-  "version": "0.8.2",
-  "publisher": "oouo-diogo-perdigao",
+  "name": "wr-docthis",
+  "displayName": "William's Document This",
+  "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files. Resumed development with the latest updates, fixes and enhancements.",
+  "version": "0.9.1",
+  "publisher": "WilliamRagstad",
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#252627",
+    "color": "#1e1e2f",
     "theme": "dark"
   },
   "author": {
-    "name": "Joel Day",
-    "url": "https://github.com/joelday"
+    "name": "William Rågstad",
+    "email": "william.ragstad@gmail.com",
+    "url": "https://github.com/WilliamRagstad"
   },
   "contributors": [
+    {
+      "name": "William Rågstad",
+      "email": "william.ragstad@gmail.com",
+      "url": "https://github.com/WilliamRagstad"
+    },
+    {
+      "name": "Joel Day",
+      "url": "https://github.com/joelday"
+    },
     {
       "name": "Diogo Passos Perdigão Britto",
       "email": "diogopbritto@gmail.com",
@@ -186,10 +196,10 @@
     "typescript": "^2.9.2"
   },
   "bugs": {
-    "url": "https://github.com/oouo-diogo-perdigao/vscode-docthis/issues"
+    "url": "https://github.com/WilliamRagstad/vscode-docthis/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oouo-diogo-perdigao/vscode-docthis"
+    "url": "https://github.com/WilliamRagstad/vscode-docthis"
   }
 }
