@@ -1,3 +1,7 @@
+### 0.9.3
+- Fix extra space when no `@description` provided.
+- Change extension description to `README`
+
 ### 0.9.2
 - Updated `CHANGELOG` AND `README`
 

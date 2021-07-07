@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis.svg?branch=master)](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis)
 [![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/williamragstad)
 
-**William's Document This** is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files. It is based on an old extension that is popular but outdated and has some room for improvement.
+**William's Document This** is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files. Resumed development with the latest updates, fixes and enhancements. It is based on an old extension that is popular but outdated and has some room for improvement.
 
 ## Demo
 ![Demo](images/demo.gif)
