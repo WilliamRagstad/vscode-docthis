@@ -1,16 +1,16 @@
-https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis
+# William's Document This
+[![Build Status](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis.svg?branch=master)](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis)
+[![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/williamragstad)
 
-[![Build Status](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis.svg?branch=master)](https://travis-ci.org/oouo-diogo-perdigao/vscode-docthis) [![Paypal Donations](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GG4X8R7UTV3AN&source=url)
+**William's Document This** is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files. It is based on an old extension that is popular but outdated and has some room for improvement.
 
-# Document This
-"Document This" is a Visual Studio Code extension that automatically generates detailed JSDoc comments for both TypeScript and JavaScript files.
-
+## Demo
 ![Demo](images/demo.gif)
 
-# Tags
+## Tags
 Supports JSDoc and Closure Compiler tags: @class, @description, @enum, @export, @function, @implements, @interface, @param, @private, @returns or @return, @static, @template, @type, @memberOf and @date.
 
-# Options
+## Options
 #### docthis.includeTypes
 When enabled, type information is added to comment tags.
 
@@ -60,7 +60,7 @@ Put @returns in place of @returns
 
 Default: false
 
-# List of all available formats for @date tag
+## List of all available formats for @date tag
 
 Mask | Description
 ---- | -----------
@@ -96,13 +96,17 @@ Mask | Description
 `'...'`, `"..."` | Literal character sequence. Surrounding quotes are removed.
 `UTC:` |	Must be the first four characters of the mask. Converts the date from local time to UTC/GMT/Zulu time before applying the mask. The "UTC:" prefix is removed.
 
-# Commands
-## Document This
+## Commands
+### Document This
 `Ctrl+Alt+D` and again `Ctrl+Alt+D`
 
 Generates documentation for whatever the caret is on or inside of.
 
-## Trace TypeScript Syntax Node
+### Trace TypeScript Syntax Node
 Prints info about the node ancestry at a given caret position.
 
-## Thank you for using Document This!
+## 🎉 Thank you for using Document This!
+
+All support is highly appreciated and any contributions are always welcome!
+
+Read more on GitHub: https://github.com/WilliamRagstad/vscode-docthis

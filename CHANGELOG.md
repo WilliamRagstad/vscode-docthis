@@ -1,3 +1,7 @@
+### 0.9.1
+- Fix spacing before tabstops.
+- Remove tabstops for `@author` and `@date`.
+
 ### 0.8.1
 - Add docthis.returnsTag. If true (default) add @returns in the comment, else add @return.
 
