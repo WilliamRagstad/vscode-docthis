@@ -209,7 +209,6 @@ export class Documenter implements vs.Disposable {
         if (vs.workspace.getConfiguration().get("docthis.includeAuthorTag", false)) {
             const author: string = vs.workspace.getConfiguration().get("docthis.authorName", "");
             sb.append("@author " + author);
-            sb.appendSnippetTabstop();
             sb.appendLine();
         }
     }
@@ -219,7 +218,6 @@ export class Documenter implements vs.Disposable {
             const dateFormatInput: string = vs.workspace.getConfiguration().get("docthis.dateTagFormat");
             const dateToAppend: string = dateformat(new Date(), dateFormatInput) || "";
             sb.append("@date " + dateToAppend);
-            sb.appendSnippetTabstop();
             sb.appendLine();
         }
     }
