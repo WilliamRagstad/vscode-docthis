@@ -192,11 +192,12 @@ export class Documenter implements vs.Disposable {
 
     private _emitDescriptionHeader(sb: utils.SnippetStringBuilder) {
         if (vs.workspace.getConfiguration().get("docthis.includeDescriptionTag", false)) {
-            sb.append("@description");
+            sb.append("@description ");
             sb.appendSnippetTabstop();
             sb.appendLine();
         } else {
             // We don't want description tag, probably because we want to free type the description. So add space for that.
+            sb.append(" ");
             sb.appendSnippetTabstop();
             sb.appendLine();
 
@@ -375,19 +376,20 @@ export class Documenter implements vs.Disposable {
     private _emitReturns(sb: utils.SnippetStringBuilder, node: ts.MethodDeclaration | ts.FunctionDeclaration | ts.FunctionExpression | ts.ArrowFunction) {
         if (utils.findNonVoidReturnInCurrentScope(node) || (node.type && node.type.getText() !== "void")) {
             if (vs.workspace.getConfiguration().get("docthis.returnsTag", true)) {
-                sb.append("@returns {*} ");
+                sb.append("@returns ");
             }
             else {
-                sb.append("@return {*} ");
+                sb.append("@return ");
             }
 
             if (includeTypes() && node.type) {
-                sb.append(" " + utils.formatTypeName(node.type.getText()));
+                sb.append(utils.formatTypeName(node.type.getText()));
             }
             else if (includeTypes() && inferTypes()) {
-                sb.append(" " + this._inferReturnTypeFromName(node.name.getText()));
+                sb.append(this._inferReturnTypeFromName(node.name.getText()));
             }
 
+            sb.append(" ");
             sb.appendSnippetTabstop();
 
             sb.appendLine();
@@ -493,7 +495,8 @@ export class Documenter implements vs.Disposable {
             if (isOptional) {
                 sb.append("]");
             }
-
+            
+            sb.append(" ");
             sb.appendSnippetTabstop();
 
             sb.appendLine();
@@ -537,6 +540,7 @@ export class Documenter implements vs.Disposable {
 
         node.typeParameters.forEach(parameter => {
             sb.append(`@template ${parameter.name.getText()}`);
+            sb.append(" ");
             sb.appendSnippetTabstop();
             sb.appendLine();
         });
