@@ -1,6 +1,7 @@
 ### 0.9.8
 - Fix return without type has double spaces
 - Fix double space when no @description
+- Fix configuration description for @return and @returns
 
 ### 0.9.3
 - Fix extra space when no `@description` provided.
