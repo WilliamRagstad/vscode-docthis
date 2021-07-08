@@ -189,7 +189,7 @@
         "docthis.returnsTag": {
           "type": "boolean",
           "default": false,
-          "description": "Put @returns in place of @returns"
+          "description": "@returns instead of @return"
         }
       }
     }
