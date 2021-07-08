@@ -256,7 +256,7 @@ export class SnippetStringBuilder {
             sb.append(" *");
 
             // If it's a blank line or only an initial tab stop, skip adding the trailing space.
-            if (line !== "" && !line.startsWith("$")) {
+            if (line.trim() !== "" && !line.startsWith("$")) {
                 sb.append(" ");
             }
 

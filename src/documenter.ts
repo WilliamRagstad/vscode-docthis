@@ -197,6 +197,7 @@ export class Documenter implements vs.Disposable {
             sb.appendLine();
         } else {
             // We don't want description tag, probably because we want to free type the description. So add space for that.
+            sb.append(" ");
             sb.appendSnippetTabstop();
             sb.appendLine();
 
