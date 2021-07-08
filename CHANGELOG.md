@@ -1,4 +1,4 @@
-### 0.9.7
+### 0.9.8
 - Fix return without type has double spaces
 - Fix double space when no @description
 
