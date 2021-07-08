@@ -253,8 +253,7 @@ export class SnippetStringBuilder {
                     return;
                 }
                 sb.append(" *");
-                const trimmed = line.trim().replace(/ /g, "");
-                if (trimmed !== "" && trimmed !== " ") {
+                if (line.trim() !== "") {
                     sb.append(" ");
                 }
                 sb.appendLine(line);
