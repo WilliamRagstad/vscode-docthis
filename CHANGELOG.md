@@ -1,3 +1,7 @@
+### 0.9.5
+- Fix double space when no @description
+-
+
 ### 0.9.3
 - Fix extra space when no `@description` provided.
 - Change extension description to `README`
