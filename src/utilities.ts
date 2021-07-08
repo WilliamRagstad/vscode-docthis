@@ -253,7 +253,7 @@ export class SnippetStringBuilder {
                     return;
                 }
                 sb.append(" *");
-                if (line.trim() !== "") {
+                if (line.trim().replace(/ /g,"") !== "") {
                     sb.append(" ");
                 }
                 sb.appendLine(line);
