@@ -2,7 +2,7 @@
   "name": "wr-docthis",
   "displayName": "William's Document This",
   "description": "Automatically generates detailed JSDoc comments in TypeScript and JavaScript files.",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "publisher": "WilliamRagstad",
   "icon": "images/icon.png",
   "galleryBanner": {

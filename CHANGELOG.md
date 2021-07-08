@@ -1,6 +1,5 @@
-### 0.9.5
+### 0.9.6
 - Fix double space when no @description
--
 
 ### 0.9.3
 - Fix extra space when no `@description` provided.

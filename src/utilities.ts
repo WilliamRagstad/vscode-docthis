@@ -246,24 +246,18 @@ export class SnippetStringBuilder {
         if (inline) {
             sb.appendLine(`/** ${lines[0]} */`);
         } else {
-        sb.appendLine("/**");
+            sb.appendLine("/**");
 
-        lines.forEach((line, i) => {
-            if (line === "" && i === lines.length - 1) {
-                return;
-            }
+            lines.forEach((line, i) => {
+                if (line.trim() === "" && i === lines.length - 1) {
+                    return;
+                }
+                sb.append(" *");
+                if (line.trim() !== "") sb.append(" ");
+                sb.appendLine(line);
+            });
 
-            sb.append(" *");
-
-            // If it's a blank line or only an initial tab stop, skip adding the trailing space.
-            if (line.trim() !== "" && !line.startsWith("$")) {
-                sb.append(" ");
-            }
-
-            sb.appendLine(line);
-        });
-
-        sb.appendLine(" */");
+            sb.appendLine(" */");
         }
 
         return new vs.SnippetString(sb.toString());
