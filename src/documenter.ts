@@ -384,12 +384,13 @@ export class Documenter implements vs.Disposable {
 
             if (includeTypes() && node.type) {
                 sb.append(utils.formatTypeName(node.type.getText()));
+                sb.append(" ");
             }
             else if (includeTypes() && inferTypes()) {
                 sb.append(this._inferReturnTypeFromName(node.name.getText()));
+                sb.append(" ");
             }
 
-            sb.append(" ");
             sb.appendSnippetTabstop();
 
             sb.appendLine();
