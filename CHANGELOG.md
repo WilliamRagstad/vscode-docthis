@@ -1,10 +1,9 @@
 ### 0.9.8
 - Fix return without type has double spaces
-- Fix double space when no @description
-- Fix configuration description for @return and @returns
+- Fix extra space when no `@description` provided.
+- Fix configuration description for `@return` and `@returns`
 
 ### 0.9.3
-- Fix extra space when no `@description` provided.
 - Change extension description to `README`
 
 ### 0.9.2
@@ -17,7 +16,7 @@
 - New icon
 
 ### 0.8.1
-- Add docthis.returnsTag. If true (default) add @returns in the comment, else add @return.
+- Add docthis.returnsTag. If true (default) add `@returns` in the comment, else add `@return`.
 
 ### 0.7.1
 - Trailing space regression fix.
