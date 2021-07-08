@@ -82,7 +82,22 @@
   "categories": [
     "Other",
     "Snippets",
+    "Formatters",
     "Programming Languages"
+  ],
+  "keywords": [
+    "Documentation",
+    "Document",
+    "This",
+    "William",
+    "William's",
+    "Snippet",
+    "Generator",
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Vue",
+    "Angular"
   ],
   "activationEvents": [
     "*"
