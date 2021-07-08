@@ -253,7 +253,9 @@ export class SnippetStringBuilder {
                     return;
                 }
                 sb.append(" *");
-                if (line.trim() !== "") sb.append(" ");
+                if (line.trim() !== "") {
+                    sb.append(" ");
+                }
                 sb.appendLine(line);
             });
 
