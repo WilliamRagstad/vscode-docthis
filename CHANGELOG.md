@@ -1,3 +1,6 @@
+### 0.9.9
+- Fix inserting `@return` to void functions
+
 ### 0.9.8
 - Fix return without type has double spaces
 - Fix extra space when no `@description` provided.
