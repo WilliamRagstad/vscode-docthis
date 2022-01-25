@@ -114,7 +114,12 @@ export function findNonVoidReturnInCurrentScope(node: ts.Node) {
     returnNode = <ts.ReturnStatement>children.find(n => n.kind === ts.SyntaxKind.ReturnStatement);
 
     if (returnNode) {
-        if (returnNode.getChildren().length > 1) {
+        const returnStatementChildren = returnNode.getChildren();
+        const isNonVoidReturn = (
+            returnStatementChildren.length > 1 &&
+            returnStatementChildren.some(child => child.kind !== ts.SyntaxKind.SemicolonToken && child.kind !== ts.SyntaxKind.ReturnKeyword)
+        );
+        if (isNonVoidReturn) {
             return returnNode;
         }
     }
